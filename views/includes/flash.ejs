@@ -1,0 +1,13 @@
+<% if (success && success.length>0) { %>    <!-- becoz success is here creted by res.local is arr and if there is not success then it will be empty -->
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+ <%=success%>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
+
+<% if (error && error.length>0) { %>    <!-- becoz success is here creted by res.local is arr and if there is not success then it will be empty -->
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+ <%=error%>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
